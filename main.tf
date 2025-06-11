@@ -8,3 +8,9 @@ module "vpc" {
   private_subnet_cidrs = var.private_subnet_cidrs
   azs                 = var.azs
 }
+
+module "db_security_group" {
+  source    = "./modules/security_group"
+  vpc_id    = module.vpc.vpc_id
+  web_sg_id = var.web_sg_id
+}

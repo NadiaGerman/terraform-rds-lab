@@ -42,3 +42,8 @@ variable "aws_profile" {
   type        = string
   default     = "default"  # matches your ~/.aws/credentials [default] profile
 }
+
+variable "web_sg_id" {
+  description = "ID of the Web Security Group (source allowed to access DB)"
+  type        = string
+}
