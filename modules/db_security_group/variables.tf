@@ -1,4 +1,4 @@
-# modules/security_group/variables.tf
+# modules/db_security_group/variables.tf
 
 variable "name" {
   description = "Name of the DB Security Group"

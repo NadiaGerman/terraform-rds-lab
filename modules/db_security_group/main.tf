@@ -1,4 +1,4 @@
-# modules/security_group/main.tf
+# modules/db_security_group/main.tf
 
 resource "aws_security_group" "db_sg" {
   name        = var.name

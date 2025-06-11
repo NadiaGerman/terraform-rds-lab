@@ -1,7 +1,7 @@
 # modules/security_group/outputs.tf
 
-output "db_security_group_id" {
-  description = "ID of the DB Security Group"
-  value       = aws_security_group.db_sg.id
+output "rds_endpoint" {
+  description = "RDS endpoint"
+  value       = aws_db_instance.this.endpoint
 }
 

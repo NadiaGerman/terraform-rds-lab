@@ -1,23 +1,17 @@
-# modules/security_group/variables.tf
+# modules/db_subnet_group/variables.tf
 
 variable "name" {
-  description = "Name of the DB Security Group"
+  description = "Name of the DB subnet group"
   type        = string
-  default     = "DB Security Group"
 }
 
 variable "description" {
-  description = "Description of the DB Security Group"
+  description = "Description of the DB subnet group"
   type        = string
-  default     = "Permit access from Web Security Group"
+  default     = "DB Subnet Group"
 }
 
-variable "vpc_id" {
-  description = "ID of the VPC"
-  type        = string
-}
-
-variable "web_sg_id" {
-  description = "ID of the Web Security Group"
-  type        = string
+variable "subnet_ids" {
+  description = "List of private subnet IDs for the DB subnet group"
+  type        = list(string)
 }
