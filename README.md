@@ -23,16 +23,27 @@ This project implements the AWS Lab: **"Build Your DB Server and Interact With Y
 ## Project Structure
 
 terraform-rds-lab/
+
 ├── main.tf
+
 ├── variables.tf
+
 ├── outputs.tf
+
 ├── terraform.tfvars
+
 ├── modules/
+
 │ ├── vpc/
+
 │ ├── db_subnet_group/
+
 │ ├── db_security_group/
+
 │ ├── rds/
+
 ├── provider.tf
+
 └── README.md
 
 
